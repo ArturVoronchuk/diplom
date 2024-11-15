@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 03-create-files-table
+      author: artur.voronchuk@yandex.ru
+      changes:
+        - createTable:
+            tableName: files
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_files
+              - column:
+                  name: filename
+                  type: varchar(255)
+              - column:
+                  name: size
+                  type: bigint
+              - column:
+                  name: data
+                  type: bytea
+              - column:
+                  name: limit
+                  type: bigint

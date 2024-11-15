@@ -1,0 +1,4 @@
+files:
+  - id: 01
+    filename: 'test.txt'
+    size: 0

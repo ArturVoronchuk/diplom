@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 02-insert-users-default
+      author: artur.voronchuk@yandex.ru
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: email
+                  value: 'artur.voronchuk@yandex.ru'
+              - column:
+                  name: password
+                  value: 'Qwerty123!'

@@ -1,0 +1,5 @@
+users:
+  - id: 02
+    email: 'testtest@mail.ru'
+    password: 'password123'
+    token: 'sampleToken'
